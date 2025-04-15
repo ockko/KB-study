@@ -1,4 +1,4 @@
-package ch01.sec11;
+package basic.ch01.sec11;
 
 public class Calculator {
     public static void main(String[] args) {

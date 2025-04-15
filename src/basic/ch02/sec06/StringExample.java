@@ -1,4 +1,4 @@
-package ch02.sec06;
+package basic.ch02.sec06;
 
 public class StringExample {
     public static void main(String[] args) {
