@@ -7,5 +7,7 @@ public class Computer {
         for (int value : values) {
             sum += value;
         }
+
+        return sum;
     }
 }
