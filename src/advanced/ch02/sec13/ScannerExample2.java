@@ -1,4 +1,4 @@
-package basic.ch02.sec13;
+package advanced.ch02.sec13;
 
 import java.util.Scanner;
 

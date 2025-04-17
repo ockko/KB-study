@@ -1,4 +1,4 @@
-package basic.ch03.advanced;
+package advanced.ch03;
 
 public class CompoundOperationExample {
     public static void main(String[] args) {
