@@ -1,0 +1,8 @@
+package basic.java04.ch07.sec03.exam02;
+
+public class SmartPhone extends Phone {
+    public SmartPhone(String model, String color) {
+        super(model, color);
+        System.out.println("SmartPhone 생성자 호출됨..");
+    }
+}
