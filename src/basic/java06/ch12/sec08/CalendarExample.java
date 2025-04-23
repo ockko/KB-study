@@ -11,29 +11,15 @@ public class CalendarExample {
         int day = now.get(Calendar.DAY_OF_MONTH);
 
         int week = now.get(Calendar.DAY_OF_WEEK);
-        String strWeek = null;
-        switch (week) {
-            case Calendar.MONDAY:
-                strWeek = "월";
-                break;
-            case Calendar.TUESDAY:
-                strWeek = "화";
-                break;
-            case Calendar.WEDNESDAY:
-                strWeek = "수";
-                break;
-            case Calendar.THURSDAY:
-                strWeek = "목";
-                break;
-            case Calendar.FRIDAY:
-                strWeek = "금";
-                break;
-            case Calendar.SATURDAY:
-                strWeek = "토";
-                break;
-            default:
-                strWeek = "일";
-        }
+        String strWeek = switch (week) {
+            case Calendar.MONDAY -> "월";
+            case Calendar.TUESDAY -> "화";
+            case Calendar.WEDNESDAY -> "수";
+            case Calendar.THURSDAY -> "목";
+            case Calendar.FRIDAY -> "금";
+            case Calendar.SATURDAY -> "토";
+            default -> "일";
+        };
 
         int amPm = now.get(Calendar.AM_PM);
         String strAmPm = null;
