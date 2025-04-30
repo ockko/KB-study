@@ -26,8 +26,8 @@ public class ArrayListExample {
 
         list.remove(2);
 
-        for (Board board : list) {
-            System.out.println(board);
-        }
+//        for (Board board : list) {
+//            System.out.println(board);
+//        }
     }
 }
