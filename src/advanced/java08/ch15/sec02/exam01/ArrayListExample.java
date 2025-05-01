@@ -18,16 +18,19 @@ public class ArrayListExample {
         System.out.println();
 
         Board board = list.get(2);
+        System.out.println(board.getSubject() + "\t" + board.getContent() + "\t" + board.getWriter());
         System.out.println();
 
         for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+            Board b = list.get(i);
+            System.out.println(b.getSubject() + "\t" + b.getContent() + "\t" + b.getWriter());
         }
+        System.out.println();
 
         list.remove(2);
 
-//        for (Board board : list) {
-//            System.out.println(board);
-//        }
+        for (Board b : list) {
+            System.out.println(b.getSubject() + "\t" + b.getContent() + "\t" + b.getWriter());
+        }
     }
 }
