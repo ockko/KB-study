@@ -13,9 +13,21 @@ public class FilteringExample {
         list.add("신민철");
 
         //중복 요소 제거
+        list.stream()
+                .distinct()
+                .forEach(System.out::println);
+        System.out.println();
 
         //신으로 시작하는 요소만 필터링
+        list.stream()
+                .filter(str -> str.startsWith("신"))
+                .forEach(System.out::println);
+        System.out.println();
 
         //중복 요소를 먼저 제거하고, 신으로 시작하는 요소만 필터링
+        list.stream()
+                .distinct()
+                .filter(str -> str.startsWith("신"))
+                .forEach(System.out::println);
     }
 }
